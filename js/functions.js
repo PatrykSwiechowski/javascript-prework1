@@ -21,16 +21,17 @@ function getMoveName(argMoveId) {
 
 
 function displayResult(argComputerMove, argPlayerMove) {
-	console.log('display displayResult')
+	printMessage('Zagrałem ' + argComputerMove + ', a Ty ' + argPlayerMove);
 	if (
 		(argComputerMove == 'nożyce' && argPlayerMove == 'kamień') ||
 		(argComputerMove == 'kamień' && argPlayerMove == 'papier') ||
 		(argComputerMove == 'papier' && argPlayerMove == 'nożyce')
-	){ return 'Wygrywasz!';
+	) {
+		printMessage('Wygrywasz!');
 	} else if (argComputerMove == argPlayerMove) {
-		return 'Remis!';
+		printMessage('Remis!');
 	} else {
-		return'Przegrywasz!';
+		printMessage('Przegrywasz');
 	}
 
 

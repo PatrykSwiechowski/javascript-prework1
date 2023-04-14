@@ -67,7 +67,8 @@ else {
 
 printMessage('Twój ruch to: ' + playerMove);
 
-let argMoveId = displayResult(console.log);
+displayResult(computerMove, playerMove);
+
 /*if (
 	(computerMove == 'nożyce' && playerMove == 'kamień') ||
 	(computerMove == 'kamień' && playerMove == 'papier') ||
