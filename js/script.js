@@ -27,8 +27,9 @@ printMessage('Liczba po zaokrągleniu w dół to: ' + roundNumber);*/
 }
 */
 
-
-function playGame(playerInput) {
+{
+const playGame=function()
+/*function playGame(playerInput)*/ {
 	clearMessages()
 
 	let randomNumber = Math.floor(Math.random() * 3 + 1);
@@ -80,6 +81,7 @@ document.getElementById('play-paper').addEventListener('click', function () {
 document.getElementById('play-scissors').addEventListener('click', function () {
 	playGame(3);
 });
+}
 
 /*if (
 	(computerMove == 'nożyce' && playerMove == 'kamień') ||
