@@ -3,6 +3,9 @@ function printMessage(msg) {
 	div.innerHTML = msg;
 	document.getElementById('messages').appendChild(div);
 }
+function clearMessages() {
+	document.getElementById('messages').innerHTML = '';
+}
 
 
 function getMoveName(argMoveId) {
@@ -36,4 +39,3 @@ function displayResult(argComputerMove, argPlayerMove) {
 
 
 }
-
