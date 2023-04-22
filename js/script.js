@@ -57,9 +57,9 @@ printMessage('Liczba po zaokrągleniu w dół to: ' + roundNumber);*/
 
 		console.log('Gracz wpisał: ' + playerInput);
 
-		var playerMove = getMoveName(playerInput);
+		const playerMove = getMoveName(playerInput);
 
-		if (playerInput == '1') {
+		/*if (playerInput == '1') {
 			playerMove = 'kamień';
 		} else if (playerInput == '2') {
 			playerMove = 'papier';
@@ -67,7 +67,7 @@ printMessage('Liczba po zaokrągleniu w dół to: ' + roundNumber);*/
 			playerMove = 'nożyce';
 		else {
 			playerMove = 'nieznany ruch'
-		}
+		}*/
 
 
 		printMessage('Twój ruch to: ' + playerMove);
